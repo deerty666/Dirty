@@ -1,49 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ديرتي - قائمة الطعام</title>
-    <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<header>
-    <h1>مطاعم سحايب ديرتي</h1>
-    <button id="installButton" style="display:none;">تثبيت المنيو 📲</button>
-</header>
-
-<h2>الأقسام الرئيسية</h2>
-<section id="menu-sections">
-    <div class="menu-card" onclick="openSection('الدجاج')"><h2>قسم الدجاج</h2></div>
-    <div class="menu-card" onclick="openSection('اللحم')"><h2>قسم اللحم</h2></div>
-    <div class="menu-card" onclick="openSection('المشويات')"><h2>قسم المشويات</h2></div>
-    <div class="menu-card" onclick="openSection('المقبلات')"><h2>قسم المقبلات</h2></div>
-    <div class="menu-card" onclick="openSection('المشروبات')"><h2>قسم المشروبات</h2></div>
-    <div class="menu-card" onclick="openSection('الحلويات')"><h2>قسم الحلويات</h2></div>
-</section>
-
-<hr>
-
-<section id="pwa-install-area" style="text-align:center; padding:15px 0;">
-    <p id="installPromoLink" style="color:#8B0000; font-weight:bold; cursor:pointer; display:none;">
-        📲 اضغط هنا لتثبيت المنيو كتطبيق على جوالك! 📲
-    </p>
-</section>
-
-<hr>
-
-<section id="cart-checkout">
-    <h2>سلة الطلبات 🛒</h2>
-    <div id="cart-details"><p>السلة فارغة.</p></div>
-    <div id="customer-info">
-        <input type="text" id="customerName" placeholder="اسمك الكريم" required>
-        <input type="tel" id="customerPhone" placeholder="رقم جوالك" required>
-    </div>
-    <button id="sendOrderBtn" class="checkout-button">إرسال الطلب عبر واتساب</button>
-</section>
-
-<script src="script.js"></script>
-</body>
-</html>
