@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مطعم ديرتي للمندي</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#A08D64">
+    <link rel="apple-touch-icon" href="logo-192.png">
+</head>
+<body>
+
+    <div id="splash-screen">
+        <img src="logo-512.png" alt="شعار المطعم" class="splash-logo">
+        <p>جودة وطعم لا يُنسى</p>
+    </div>
+
+    <header>
+        <div class="mobile-nav">
+            <img src="logo-192.png" alt="شعار" class="logo-img">
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#meats">اللحوم</a></li>
+                <li><a href="#chickens">الدجاج</a></li>
+                <li><a href="#rice-dishes">أطباق الأرز</a></li>
+                <li><a href="#drinks">المشروبات والسلطات</a></li>
+                <li><a href="#desserts">الحلويات</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="category-icons-container">
+        <div class="category-icons-list">
+            <a href="#meats" class="category-item">
+                <div class="icon-circle"><i class="fas fa-drumstick-bite"></i></div>
+                <span class="category-name">لحوم</span>
+            </a>
+            <a href="#chickens" class="category-item">
+                <div class="icon-circle"><i class="fas fa-feather-alt"></i></div>
+                <span class="category-name">دجاج</span>
+            </a>
+            <a href="#rice-dishes" class="category-item">
+                <div class="icon-circle"><i class="fas fa-concierge-bell"></i></div>
+                <span class="category-name">أرز</span>
+            </a>
+            <a href="#drinks" class="category-item">
+                <div class="icon-circle"><i class="fas fa-glass-cheers"></i></div>
+                <span class="category-name">مشروبات</span>
+            </a>
+            <a href="#desserts" class="category-item">
+                <div class="icon-circle"><i class="fas fa-ice-cream"></i></div>
+                <span class="category-name">حلويات</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <h2 id="meats"><i class="fas fa-drumstick-bite"></i> قسم اللحوم</h2>
+        <div class="card-grid">
+
+            <div class="menu-card meal-item" data-item-id="M01">
+                <h3 class="item-title">نفر لحم مندي</h3>
+                <div class="main-options-group">
+                    <h4>اختيار نوع الأرز (إجباري)</h4>
+                    <div class="option-card">
+                        <label>
+                            <input type="radio" name="rice-M01" value="5" required>
+                            <span>أرز مندي</span>
+                        </label>
+                        <span class="price-display">+5 ريال</span>
+                    </div>
+                    <div class="option-card">
+                        <label>
+                            <input type="radio" name="rice-M01" value="0" required>
+                            <span>أرز كابلي</span>
+                        </label>
+                        <span class="price-display">0 ريال</span>
+                    </div>
+                </div>
+                <p class="base-price">85 ريال</p> 
+                <button class="add-to-cart-btn">أضف إلى السلة</button>
+            </div>
+
+            <div class="menu-card meal-item" data-item-id="M02">
+                <h3 class="item-title">ربع حبة لحم حاشي</h3>
+                <div class="main-options-group">
+                    <h4>اختيار نوع الأرز (إجباري)</h4>
+                    <div class="option-card">
+                        <label>
+                            <input type="radio" name="rice-M02" value="0" required>
+                            <span>أرز بشاور</span>
+                        </label>
+                        <span class="price-display">0 ريال</span>
+                    </div>
+                    <div class="option-card">
+                        <label>
+                            <input type="radio" name="rice-M02" value="10" required>
+                            <span>أرز مدخن</span>
+                        </label>
+                        <span class="price-display">+10 ريال</span>
+                    </div>
+                </div>
+                <p class="base-price">110 ريال</p>
+                <button class="add-to-cart-btn">أضف إلى السلة</button>
+            </div>
+
+        </div>
+
+        <h2 id="chickens"><i class="fas fa-feather-alt"></i> قسم الدجاج</h2>
+        <div class="card-grid">
+
+            <div class="menu-card meal-item" data-item-id="C01">
+                <h3 class="item-title">حبة دجاج مندي كاملة</h3>
+                <div class="main-options-group">
+                    <h4>اختيار نوع الأرز (إجباري)</h4>
+                    <div class="option-card">
+                        <label>
+                            <input type="radio" name="rice-C01" value="4" required>
+                            <span>أرز برياني</span>
+                        </label>
+                        <span class="price-display">+4 ريال</span> 
+                    </div>
+                    <div class="option-card">
+                        <label>
+                            <input type="radio" name="rice-C01" value="0" required>
+                            <span>أرز شعبي</span>
+                        </label>
+                        <span class="price-display">0 ريال</span>
+                    </div>
+                </div>
+                <p class="base-price">46 ريال</p> 
+                <button class="add-to-cart-btn">أضف إلى السلة</button>
+            </div>
+
+            <div class="menu-card meal-item" data-item-id="C02">
+                <h3 class="item-title">نصف حبة دجاج مظبي</h3>
+                <div class="main-options-group">
+                    <h4>اختيار نوع الأرز (إجباري)</h4>
+                    <div class="option-card">
+                        <label>
+                            <input type="radio" name="rice-C02" value="0" required>
+                            <span>أرز أحمر</span>
+                        </label>
+                        <span class="price-display">0 ريال</span>
+                    </div>
+                    <div class="option-card">
+                        <label>
+                            <input type="radio" name="rice-C02" value="3" required>
+                            <span>أرز أبيض</span>
+                        </label>
+                        <span class="price-display">+3 ريال</span>
+                    </div>
+                </div>
+                <p class="base-price">28 ريال</p>
+                <button class="add-to-cart-btn">أضف إلى السلة</button>
+            </div>
+
+        </div>
+
+        <h2 id="drinks"><i class="fas fa-glass-cheers"></i> مشروبات وسلطات</h2>
+        <div class="card-grid">
+
+            <div class="menu-card simple-item" data-item-id="D01">
+                <div class="item-details">
+                    <h3 class="item-title">سفن آب (كبير)</h3>
+                    <p class="base-price">9 ريال</p>
+                    <button class="add-to-cart-btn">أضف إلى السلة</button>
+                </div>
+            </div>
+
+            <div class="menu-card simple-item" data-item-id="D02">
+                <div class="item-details">
+                    <h3 class="item-title">لبن محلي</h3>
+                    <p class="base-price">7 ريال</p>
+                    <button class="add-to-cart-btn">أضف إلى السلة</button>
+                </div>
+            </div>
+
+            <div class="menu-card simple-item" data-item-id="S01">
+                <div class="item-details">
+                    <h3 class="item-title">سلطة حارة</h3>
+                    <p class="base-price">6 ريال</p>
+                    <button class="add-to-cart-btn">أضف إلى السلة</button>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 id="desserts"><i class="fas fa-ice-cream"></i> الحلويات</h2>
+        <div class="card-grid">
+
+            <div class="menu-card simple-item" data-item-id="Ds01">
+                <div class="item-details">
+                    <h3 class="item-title">كنافة بالقشطة</h3>
+                    <p class="base-price">15 ريال</p>
+                    <button class="add-to-cart-btn">أضف إلى السلة</button>
+                </div>
+            </div>
+
+            <div class="menu-card simple-item" data-item-id="Ds02">
+                <div class="item-details">
+                    <h3 class="item-title">حلى التمر</h3>
+                    <p class="base-price">12 ريال</p>
+                    <button class="add-to-cart-btn">أضف إلى السلة</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <button id="view-cart-btn" disabled>عرض السلة (0)</button>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>سلة المشتريات</h2>
+
+            <div id="cart-items-container">
+                <p style="text-align: center; color: #666;">السلة فارغة حاليًا.</p>
+            </div>
+
+            <div class="order-options-in-modal">
+                <h3>طريقة الاستلام (إجباري):</h3>
+                <div class="option-radio">
+                    <label>
+                        <input type="radio" name="delivery-option" value="0" checked>
+                        <span>استلام من الفرع:</span>
+                        <span class="price-add">0 ريال</span>
+                    </label>
+                </div>
+                <div class="option-radio">
+                    <label>
+                        <input type="radio" name="delivery-option" value="15">
+                        <span>توصيل للمنزل:</span>
+                        <span class="price-add">15 ريال</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="cart-summary">
+                <h3>ملخص الطلب</h3>
+                <div class="totals-display">
+                    </div>
+            </div>
+            
+            <div class="note-section">
+                <h4>ملاحظات على الطلب (اختياري):</h4>
+                <textarea id="order-note" placeholder="مثال: أريد الأرز منفصلاً، أو تغليف خاص، أو تحديد موقع التوصيل بدقة..."></textarea>
+            </div>
+            <button id="send-order-btn" disabled>
+                <i class="fa-brands fa-whatsapp"></i> إرسال الطلب عبر واتساب
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
